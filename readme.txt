@@ -7,6 +7,7 @@ A free dungeon tile set generator
 Created by Alex Wilson
 @400goblins
 https://400goblins.blogspot.com
+https://github.com/angramainyu74/fettler
 
 This software is released under CC0 "No Rights Reserved" license.
 https://creativecommons.org/share-your-work/public-domain/cc0/
@@ -126,6 +127,14 @@ Possible future plans
  support, like Python.
 -Some sort of "decoration" support for doors, etc.
 -... other suggestions?
+
+
+Other useful commands
+=====================
+You can use ImageMagick to make thumbnail sheets of your masks for easy reference:
+ magick montage -pointsize 10 -label '%t' 'masks/*.png' -geometry 60x60+2+2 -tile 10x10 -background gray50 tiles_%d.png
+Or a single giant thumbnail sheet:
+ magick montage -pointsize 10 -label '%t' 'masks/*.png' -geometry 60x60+2+2 -tile 30x -background gray50 tiles.png
 
 
 Resources
