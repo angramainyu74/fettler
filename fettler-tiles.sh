@@ -23,22 +23,10 @@ TEXTUREDIR=seamless
 #SHADOW=false
 #EDGELESS=true
 
-#PREFIX=hatch_
-#FLOOR=${TEXTUREDIR}/white.png
-#WALL=${TEXTUREDIR}/hatch.png
-#GRID=${GRIDDIR}/grid_40_hard.png
-#SHADOW=false
-
-PREFIX=stone_
-FLOOR=${TEXTUREDIR}/461223168.png
-WALL=${TEXTUREDIR}/461223139.png
-GRID=${GRIDDIR}/box_75_soft.png
-SHADOW=true
-
-#PREFIX=stone2_
-#FLOOR=${TEXTUREDIR}/20537699384_b3e88b05f4_b.png
-#WALL=${TEXTUREDIR}/4818273071_c3b375a183_b.png
-#GRID=${GRIDDIR}/blank.png
+#PREFIX=cracked_
+#FLOOR=${TEXTUREDIR}/Ground-Texture-Earth-Seamless-Tileable-Cracks-1807373.png
+#WALL=${TEXTUREDIR}/4601588797_a6ced2011a_z.png
+#GRID=${GRIDDIR}/cross_75_hard.png
 #SHADOW=true
 
 #PREFIX=moss_
@@ -47,10 +35,22 @@ SHADOW=true
 #GRID=${GRIDDIR}/grid_60_soft.png
 #SHADOW=true
 
-#PREFIX=cracked_
-#FLOOR=${TEXTUREDIR}/Ground-Texture-Earth-Seamless-Tileable-Cracks-1807373.png
-#WALL=${TEXTUREDIR}/4601588797_a6ced2011a_z.png
-#GRID=${GRIDDIR}/cross_75_hard.png
+PREFIX=hatch_
+FLOOR=${TEXTUREDIR}/white.png
+WALL=${TEXTUREDIR}/hatch.png
+GRID=${GRIDDIR}/grid_40_hard.png
+SHADOW=false
+
+#PREFIX=stone_
+#FLOOR=${TEXTUREDIR}/461223168.png
+#WALL=${TEXTUREDIR}/461223139.png
+#GRID=${GRIDDIR}/box_75_soft.png
+#SHADOW=true
+
+#PREFIX=stone2_
+#FLOOR=${TEXTUREDIR}/20537699384_b3e88b05f4_b.png
+#WALL=${TEXTUREDIR}/4818273071_c3b375a183_b.png
+#GRID=${GRIDDIR}/blank.png
 #SHADOW=true
 
 
