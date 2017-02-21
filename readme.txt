@@ -1,4 +1,4 @@
-Fettler v1.0
+Fettler v1.1
 A free dungeon tile set generator
 
 "Magic is impressive, but now Minsc leads. Free tiles for everyone!"
@@ -52,8 +52,8 @@ command:
  magick convert logo: logo.png
 should produce the logo.png file. If it does not, Fettler scripts
 will not work.
-Personally, I found it easier to get the Win64 build of ImageMagick 
-working correctly with Cygwin.
+Personally, I found it easier to get the Win64 non-Cygwin build of
+ImageMagick working correctly with Cygwin.
 
 
 Usage
@@ -105,6 +105,17 @@ them. Run:
 and it will convert all the pngs in "output" and put all of them
 them into the "output_jpg" sub-directory.
 
+fettler-map.sh
+--------------
+Creates a map by adding a tile to a map image.
+Arguments: <mapfilepath> <x> <y> <maptilepath> 
+-if mapfilepath does not exist, will create a map of size x and y
+ with maptilepath (x and y as number of tiles) 
+-if mapfilepath does exist, will add maptilepath at position x and y
+ (0-indexed)
+See sample-map.sh for an example script that builds a map out of 
+tiles.
+
 
 Known issues
 ============
@@ -131,7 +142,8 @@ Possible future plans
 
 Other useful commands
 =====================
-You can use ImageMagick to make thumbnail sheets of your masks for easy reference:
+You can use ImageMagick to make thumbnail sheets of your masks for 
+easy reference:
  magick montage -pointsize 10 -label '%t' 'masks/*.png' -geometry 60x60+2+2 -tile 10x10 -background gray50 tiles_%d.png
 Or a single giant thumbnail sheet:
  magick montage -pointsize 10 -label '%t' 'masks/*.png' -geometry 60x60+2+2 -tile 30x -background gray50 tiles.png
@@ -150,3 +162,15 @@ http://duion.com/art/textures
 http://www.deviantart.com/browse/all/?section=&global=1&q=seamless+tile&offset=0
 and doctorfree's mkseamless.sh:
 https://github.com/doctorfree/Scripts
+
+
+Changelog
+=========
+v1.1
+-add fettler-map.sh and sample-map.sh
+-fix edge of soft grid overlays (you could see the edge of tile that
+ used a soft box)
+-added my hatch.png and some solid colour texture files to the repo
+
+v1.0
+-Initial release
