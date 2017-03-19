@@ -1,4 +1,4 @@
-Fettler v1.1
+Fettler v1.2
 A free dungeon tile set generator
 
 "Magic is impressive, but now Minsc leads. Free tiles for everyone!"
@@ -166,6 +166,13 @@ https://github.com/doctorfree/Scripts
 
 Changelog
 =========
+v1.2
+-fettle-map-single.sh will apply tiled walls and floors to a single larger
+ mask image -- you can use this to make/edit a map as single mask, then
+ texture it.
+-added some initial python-based tools for random map generation -- Further
+ cleanup and documentation forthcoming.
+
 v1.1
 -add fettler-map.sh and sample-map.sh
 -fix edge of soft grid overlays (you could see the edge of tile that
